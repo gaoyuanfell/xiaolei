@@ -6,7 +6,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "build:github": "ng build -prod -d https://gaoyuanfell.github.io/xiaolei/ -bh https://gaoyuanfell.github.io/xiaolei/",
+        "build:github": "ng build --output-path pages -prod -d https://gaoyuanfell.github.io/xiaolei/ -bh https://gaoyuanfell.github.io/xiaolei/",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
