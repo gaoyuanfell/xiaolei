@@ -1,6 +1,14 @@
-<div>{{ 'HELLO' | translate }}</div>
+<app-header></app-header>
 
-<img [src]="'IMG' | translate">
+<div id="main">
+    1
+    <router-outlet></router-outlet>
+</div>
 
-<button (click)="change()">切换语言</button>
-<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+<!--<div>{{ 'HELLO' | translate }}</div>-->
+
+<!--<img [src]="'IMG' | translate">-->
+
+<!--<button (click)="change()">切换语言</button>-->
