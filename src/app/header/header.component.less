@@ -3,14 +3,34 @@
     left: 0;
     right: 0;
     z-index: 999999;
-
-
+    display: block;
+    height: 50px;
 }
 .header{
-    position: relative;
+    position: absolute;
     min-width: 1200px;
-    height: 50px;
+    height: 100%;
     padding: 0 32px;
     background-color: #222;
-    display: block;
+    display: flex;
+    .logo{
+        flex: 0 0 auto;
+        width: 125px;
+        height: 16px;
+        margin: 17px 80px 17px 0;
+        background-image: url(../../assets/img/logo.png);
+        background-size: contain;
+    }
+    .btn-item{
+        flex: 1;
+        span{
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    }
 }
