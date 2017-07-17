@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "i18n": "ng-xi18n --i18nFormat=xlf  --outFile=messages.xlf",
         "ng": "ng",
         "start": "ng serve -p 4300",
         "build": "ng build",
