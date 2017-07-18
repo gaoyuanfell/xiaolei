@@ -8,6 +8,9 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
+import { IndexComponent } from './index/index.component';
+import { SlideImgComponent } from './slide-img/slide-img.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -17,10 +20,13 @@ export function createTranslateLoader(http: Http) {
     declarations: [
         AppComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        IndexComponent,
+        SlideImgComponent
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         HttpModule,
         TranslateModule.forRoot({

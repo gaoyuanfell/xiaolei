@@ -1,0 +1,15 @@
+<div class="carousel-box flex">
+    <div class="slide" *ngFor="let m of listImg">
+        <a [@fadeIn] *ngIf="m.selected" class="click" href="javascript:void 0"> <img [src]="m.url" alt=""> </a>
+    </div>
+    <div class="ctrl left" (click)="pop()">
+        <span><</span>
+    </div>
+    <div class="ctrl right" (click)="next()">
+        <span>></span>
+    </div>
+    <div class="ctrl-click">
+        <!--active-->
+        <span *ngFor="let m of listImg" class="item" [ngClass]="{'active':m.selected}" (click)="selected(m)"></span>
+    </div>
+</div>

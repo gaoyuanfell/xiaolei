@@ -4,10 +4,13 @@
     </h1>
     <div class="btn-item">
         <span>首页</span>
-        <span>首页</span>
-        <span>首页</span>
-        <span>首页</span>
-        <span>首页</span>
-        <span>首页</span>
+        <span>产品及解决方案</span>
+        <span>资费以及服务</span>
+        <span>应用领域</span>
+        <span>企业客户</span>
+        <span>关于我们</span>
+    </div>
+    <div class="language">
+        <i class="lan-item" [ngClass]="{'selected':isZh}" (click)="changeZh()">中文</i>&nbsp;/&nbsp;<i [ngClass]="{'selected':!isZh}" class="lan-item" (click)="changeEn()">EN</i>
     </div>
 </div>

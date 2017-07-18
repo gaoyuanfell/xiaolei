@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 8px;
     height: 8px
 }
@@ -27,7 +27,7 @@
 
 ::-webkit-scrollbar-thumb:active {
     background: rgba(0, 0, 0, .6)
-}
+}*/
 
 ul, ol {
     list-style: none;
@@ -77,4 +77,16 @@ a{
     color: inherit;
     line-height: inherit;
     text-decoration: none;
+}
+
+.flex {
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
