@@ -68,6 +68,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
 
     @Input('list') list;
     @Input('time') time = 3000;
+    @Input('ctrl') ctrl = true;
 
     selected(m) {
         this.autoPlay();
