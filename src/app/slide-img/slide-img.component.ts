@@ -1,5 +1,6 @@
 import {Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@angular/core';
 import {fadeIn} from "../basic/animations/fade-in";
+import {reject} from "q";
 
 @Component({
     selector: 'app-slide-img',
@@ -29,6 +30,19 @@ export class SlideImgComponent implements OnInit, OnChanges {
 
     ngOnInit() {
         this.autoPlay();
+    }
+
+    getImgWH(url:string){
+        let img = new Image();
+        img.src = url;
+        return new Promise( (resolve,reject) => {
+            img.onload = function () {
+                resolve({
+                    width:img.width,
+                    height:img.height
+                })
+            }
+        } )
     }
 
     push(img: string, index: number = this.list.length) {
