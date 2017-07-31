@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {IndexComponent} from "./index/index.component";
 import {ProductComponent} from "./product/product.component";
+import {PostageComponent} from "./postage/postage.component";
+import {ApplicationComponent} from "./application/application.component";
 
 const routes: Routes = [
     {
@@ -11,6 +13,14 @@ const routes: Routes = [
     {
         path: 'product',
         component: ProductComponent
+    },
+    {
+        path: 'postage',
+        component: PostageComponent
+    },
+    {
+        path: 'application',
+        component: ApplicationComponent
     },
     {
         path: '',

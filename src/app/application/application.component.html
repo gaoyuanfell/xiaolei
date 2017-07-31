@@ -1,0 +1,113 @@
+<div class="container-box">
+    <div class="nav-sub">
+        <ul class="nav-list">
+            <li><a href="javascript:void 0" (click)="dataType = 1">亚洲</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 2">欧洲</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 3">美洲</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 4">大洋洲</a></li>
+        </ul>
+    </div>
+
+    <div [ngSwitch]="dataType">
+
+        <ng-template [ngSwitchCase]="1">
+            <div class="introduce">
+                <div class="img">
+                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                </div>
+                <div class="text">
+                    <h2>IOT XXX模块产品</h2>
+                    <ol>
+                        <li>自动发现并统一管理AP，最多可管理10000个AP</li>
+                        <li>统一配置无线网络，支持SSID与Tag VLAN映射</li>
+                        <li>支持MAC认证、Portal认证、微信连Wi-Fi等多种用户接入认证方式</li>
+                        <li>支持AP负载均衡，均匀分配AP连接的无线客户端数量</li>
+                        <li>禁止弱信号客户端接入和踢除弱信号客户端</li>
+                        <li>AP LED灯开启和关闭</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="introduce-box">
+                <div class="header">
+                    <h2 class="m-0">产品概述</h2>
+                </div>
+                <div class="introduce">
+                    <div class="img-small">
+                        <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    </div>
+                    <div class="text">
+                        <h2>链接管理解决方案</h2>
+                        <ol>
+                            <li>自动发现并统一管理AP，最多可管理10000个AP</li>
+                            <li>统一配置无线网络，支持SSID与Tag VLAN映射</li>
+                            <li>支持MAC认证、Portal认证、微信连Wi-Fi等多种用户接入认证方式</li>
+                            <li>支持AP负载均衡，均匀分配AP连接的无线客户端数量</li>
+                            <li>禁止弱信号客户端接入和踢除弱信号客户端</li>
+                            <li>AP LED灯开启和关闭</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template [ngSwitchCase]="2">
+            <div class="introduce">
+                <div class="img">
+                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                </div>
+                <div class="text">
+                    <h2>softsim解决方案</h2>
+                    <ol>
+                        <li>自动发现并统一管理AP，最多可管理10000个AP</li>
+                        <li>统一配置无线网络，支持SSID与Tag VLAN映射</li>
+                        <li>支持MAC认证、Portal认证、微信连Wi-Fi等多种用户接入认证方式</li>
+                        <li>支持AP负载均衡，均匀分配AP连接的无线客户端数量</li>
+                        <li>禁止弱信号客户端接入和踢除弱信号客户端</li>
+                        <li>AP LED灯开启和关闭</li>
+                    </ol>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template [ngSwitchCase]="3">
+            <div class="introduce">
+                <div class="img">
+                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                </div>
+                <div class="text">
+                    <h2>链接管理解决方案</h2>
+                    <ol>
+                        <li>自动发现并统一管理AP，最多可管理10000个AP</li>
+                        <li>统一配置无线网络，支持SSID与Tag VLAN映射</li>
+                        <li>支持MAC认证、Portal认证、微信连Wi-Fi等多种用户接入认证方式</li>
+                        <li>支持AP负载均衡，均匀分配AP连接的无线客户端数量</li>
+                        <li>禁止弱信号客户端接入和踢除弱信号客户端</li>
+                        <li>AP LED灯开启和关闭</li>
+                    </ol>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template [ngSwitchCase]="4">
+            <div class="introduce">
+                <div class="img">
+                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                </div>
+                <div class="text">
+                    <h2>链接管理解决方案</h2>
+                    <ol>
+                        <li>自动发现并统一管理AP，最多可管理10000个AP</li>
+                        <li>统一配置无线网络，支持SSID与Tag VLAN映射</li>
+                        <li>支持MAC认证、Portal认证、微信连Wi-Fi等多种用户接入认证方式</li>
+                        <li>支持AP负载均衡，均匀分配AP连接的无线客户端数量</li>
+                        <li>禁止弱信号客户端接入和踢除弱信号客户端</li>
+                        <li>AP LED灯开启和关闭</li>
+                    </ol>
+                </div>
+            </div>
+        </ng-template>
+
+    </div>
+
+</div>

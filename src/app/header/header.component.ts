@@ -50,21 +50,21 @@ export class HeaderComponent implements OnInit {
             name: '资费以及服务',
             link: '',
             childList: [
-                {name: '亚洲', link: ''},
-                {name: '欧洲', link: ''},
-                {name: '美洲', link: ''},
-                {name: '大洋洲', link: ''},
+                {name: '亚洲', link: 'postage',params:{id:1}},
+                {name: '欧洲', link: 'postage',params:{id:2}},
+                {name: '美洲', link: 'postage',params:{id:3}},
+                {name: '大洋洲', link: 'postage',params:{id:4}},
             ]
         },
         {
             name: '应用领域',
             link: '',
             childList: [
-                {name: '消费电子', link: ''},
-                {name: '物流', link: ''},
-                {name: '车联网', link: ''},
-                {name: '智慧楼宇', link: ''},
-                {name: '市政工程', link: ''},
+                {name: '消费电子', link: 'application',params:{id:1}},
+                {name: '物流', link: 'application',params:{id:2}},
+                {name: '车联网', link: 'application',params:{id:3}},
+                {name: '智慧楼宇', link: 'application',params:{id:4}},
+                {name: '市政工程', link: 'application',params:{id:5}},
             ]
         },
         {

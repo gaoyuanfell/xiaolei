@@ -12,6 +12,8 @@ import { IndexComponent } from './index/index.component';
 import { SlideImgComponent } from './slide-img/slide-img.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { ProductComponent } from './product/product.component';
+import { PostageComponent } from './postage/postage.component';
+import { ApplicationComponent } from './application/application.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -24,7 +26,9 @@ export function createTranslateLoader(http: Http) {
         FooterComponent,
         IndexComponent,
         SlideImgComponent,
-        ProductComponent
+        ProductComponent,
+        PostageComponent,
+        ApplicationComponent
     ],
     imports: [
         BrowserModule,

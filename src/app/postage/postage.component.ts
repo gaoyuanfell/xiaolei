@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-    selector: 'app-product',
-    templateUrl: './product.component.html',
-    styleUrls: ['./product.component.less']
+    selector: 'app-postage',
+    templateUrl: './postage.component.html',
+    styleUrls: ['./postage.component.less']
 })
-export class ProductComponent implements OnInit {
+export class PostageComponent implements OnInit {
 
     constructor(private _route:ActivatedRoute) {
         this._route.params.subscribe( (data:any) => {

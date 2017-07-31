@@ -42,6 +42,9 @@ export class SlideImgComponent implements OnInit, OnChanges {
                     height:img.height
                 })
             }
+            img.onerror = function (error) {
+                reject(error);
+            }
         } )
     }
 
@@ -50,7 +53,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
         if (index > i) {
             throw 'index 不能大于实际长度';
         }
-        this.list.splice(index, 0, img)
+        this.list.splice(index, 0, img);
         this.init();
     }
 
