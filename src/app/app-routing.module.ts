@@ -4,6 +4,8 @@ import {IndexComponent} from "./index/index.component";
 import {ProductComponent} from "./product/product.component";
 import {PostageComponent} from "./postage/postage.component";
 import {ApplicationComponent} from "./application/application.component";
+import {CustomerComponent} from "./customer/customer.component";
+import {AboutComponent} from "./about/about.component";
 
 const routes: Routes = [
     {
@@ -23,12 +25,20 @@ const routes: Routes = [
         component: ApplicationComponent
     },
     {
+        path: 'customer',
+        component: CustomerComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
         path: '',
         redirectTo: '/index',
         pathMatch: 'full',
     },
     {
-        path:'**',
+        path: '**',
         redirectTo: '/index',
         pathMatch: 'full',
     }

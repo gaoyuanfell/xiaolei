@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
             name: '产品及解决方案',
             link: '',
             childList: [
-                {name: 'IOT XXX模块产品', link: 'product',params:{id:1}},
+                {name: '领科的模块产品', link: 'product',params:{id:1}},
                 {name: 'softsim解决方案', link: 'product',params:{id:2}},
                 {name: '链接管理解决方案', link: 'product',params:{id:3}},
             ]
@@ -69,11 +69,11 @@ export class HeaderComponent implements OnInit {
         },
         {
             name:'企业客户',
-            link:'',
+            link:'customer',
         },
         {
             name:'关于我们',
-            link:'',
+            link:'about',
         }
     ];
 
