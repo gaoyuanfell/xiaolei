@@ -1,9 +1,9 @@
 <div class="container-box">
     <div class="nav-sub">
         <ul class="nav-list">
-            <li><a href="javascript:void 0" (click)="dataType = 1">领科的模块产品</a></li>
-            <li><a href="javascript:void 0" (click)="dataType = 2">DCP解决方案</a></li>
-            <li><a href="javascript:void 0" (click)="dataType = 3">SOFTSIM以及远程配置管理</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 1" [ngClass]="{'active':dataType == 1}">领科的模块产品</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 2" [ngClass]="{'active':dataType == 2}">DCP解决方案</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 3" [ngClass]="{'active':dataType == 3}">SOFTSIM以及远程配置管理</a></li>
         </ul>
     </div>
 
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="introduce">
-                    <div class="w-100">
+                    <div class="w-100 p-4">
                         <h2>技术参数</h2>
                         <table class="table table-striped" width="100%">
                             <tbody>
