@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
         },
         {
             name: '产品及解决方案',
-            link: '',
+            link: 'product',
             childList: [
                 {name: '领科的模块产品', link: 'product',params:{id:1}},
                 {name: 'softsim解决方案', link: 'product',params:{id:2}},
@@ -48,17 +48,18 @@ export class HeaderComponent implements OnInit {
         },
         {
             name: '资费以及服务',
-            link: '',
+            link: 'postage',
             childList: [
                 {name: '亚洲', link: 'postage',params:{id:1}},
                 {name: '欧洲', link: 'postage',params:{id:2}},
-                {name: '美洲', link: 'postage',params:{id:3}},
-                {name: '大洋洲', link: 'postage',params:{id:4}},
+                {name: '北美洲', link: 'postage',params:{id:3}},
+                {name: '南美洲', link: 'postage',params:{id:4}},
+                {name: '大洋洲', link: 'postage',params:{id:5}},
             ]
         },
         {
             name: '应用领域',
-            link: '',
+            link: 'application',
             childList: [
                 {name: '消费电子', link: 'application',params:{id:1}},
                 {name: '物流', link: 'application',params:{id:2}},
@@ -66,10 +67,6 @@ export class HeaderComponent implements OnInit {
                 {name: '智慧楼宇', link: 'application',params:{id:4}},
                 {name: '市政工程', link: 'application',params:{id:5}},
             ]
-        },
-        {
-            name:'企业客户',
-            link:'customer',
         },
         {
             name:'关于我们',
