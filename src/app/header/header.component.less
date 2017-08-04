@@ -1,10 +1,11 @@
+@header-height:70px;
 :host {
     position: fixed;
     left: 0;
     right: 0;
     z-index: 999999;
     display: block;
-    height: 50px;
+    height: @header-height;
 }
 
 .header {
@@ -24,11 +25,12 @@
         cursor: pointer;
         outline: none;
         flex: 0 0 auto;
-        width: 125px;
-        height: 16px;
-        margin: 17px 80px 17px 0;
-        background-image: url(../../assets/img/logo.png);
+        width: 205px;
+        height: 60px;
+        margin: 5px;
+        background-image: url(../../assets/img/logo.png) ;
         background-size: contain;
+        background-repeat: no-repeat;
     }
     .btn-item {
         flex: 1;
@@ -37,14 +39,14 @@
             margin: 0 15px;
             color: #fff;
             padding: 0 10px;
-            height: 50px;
-            line-height: 50px;
+            height: @header-height;
+            line-height: @header-height;
             cursor: pointer;
         }
     }
     .language {
         color: #fff;
-        line-height: 50px;
+        line-height: @header-height;
         .lan-item {
             cursor: pointer;
             color: #999;

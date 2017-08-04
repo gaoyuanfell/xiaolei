@@ -35,7 +35,8 @@ export function createTranslateLoader(http: Http) {
         AboutComponent
     ],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({appId: 'ang4-seo-xiaolei'}),
+        // BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         HttpModule,

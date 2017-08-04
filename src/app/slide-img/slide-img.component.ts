@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewChild} from '@angular/core';
 import {fadeIn} from "../basic/animations/fade-in";
 import {reject} from "q";
 
@@ -23,9 +23,12 @@ export class SlideImgComponent implements OnInit, OnChanges {
             });
             this.listImg[0].selected = true;
         }
+        this.getImgWH(this.listImg[0].url).then( ({width,height}) => {
+            this._renderer.setStyle(this.carouselBox.nativeElement,'padding-bottom',`${(height / width)*100}%`)
+        } )
     }
 
-    constructor() {
+    constructor(private _renderer:Renderer2) {
     }
 
     ngOnInit() {
@@ -86,6 +89,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
     @Input('list') list;
     @Input('time') time = 3000;
     @Input('ctrl') ctrl = true;
+    @ViewChild('carouselBox') carouselBox:ElementRef;
 
     selected(m) {
         this.autoPlay();
