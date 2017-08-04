@@ -33,6 +33,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
 
     ngOnInit() {
         this.autoPlay();
+        this._renderer.setStyle(this.carouselBox.nativeElement,'padding-bottom',`${(this.height / this.width)*100}%`)
     }
 
     getImgWH(url:string){
@@ -89,6 +90,8 @@ export class SlideImgComponent implements OnInit, OnChanges {
     @Input('list') list;
     @Input('time') time = 3000;
     @Input('ctrl') ctrl = true;
+    @Input('width') width = 0;
+    @Input('height') height = 0;
     @ViewChild('carouselBox') carouselBox:ElementRef;
 
     selected(m) {
