@@ -17,10 +17,6 @@ export class ApplicationComponent implements OnInit {
 
     dataType = 1;
 
-    list = [
-        "assets/img/1.jpg"
-    ]
-
     ngOnInit() {
     }
 

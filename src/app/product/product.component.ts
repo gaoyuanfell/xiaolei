@@ -17,10 +17,6 @@ export class ProductComponent implements OnInit {
 
     dataType = 1;
 
-    list = [
-        "assets/img/1.jpg"
-    ]
-
     ngOnInit() {
     }
 

@@ -12,7 +12,6 @@ export class IndexComponent implements OnInit {
     }
 
     ngOnInit() {
-        setTimeout(()=> {this.slideImgRef.push("assets/img/3.jpg")},8000)
     }
 
     @ViewChild('slideImg') slideImgRef:SlideImgComponent;
@@ -20,8 +19,5 @@ export class IndexComponent implements OnInit {
     list = [
         "assets/img/1.jpg",
         "assets/img/2.jpg",
-        "assets/img/3.jpg",
-        "assets/img/4.jpg",
-        "assets/img/5.jpg",
     ]
 }

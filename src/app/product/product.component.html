@@ -12,7 +12,7 @@
         <ng-template [ngSwitchCase]="1">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product1.jpg']" [width]="553" [height]="407" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                 </div>
                 <div class="text">
                     <h2>领科的模块产品</h2>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="introduce">
                     <div class="img-small">
-                        <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                        <app-slide-img [list]="['assets/img/product2.jpg']" [width]="370" [height]="210" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                     </div>
                     <div class="text">
                         <h2>产品特点以及利益</h2>
@@ -93,7 +93,7 @@
         <ng-template [ngSwitchCase]="2">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product3.jpg']" #slideImg="slideImg" [width]="553" [height]="407" [ctrl]="false"></app-slide-img>
                 </div>
                 <div class="text">
                     <h2>DCP解决方案</h2>
@@ -151,7 +151,7 @@
         <ng-template [ngSwitchCase]="3">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="list" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product4.jpg']" [width]="553" [height]="407" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                 </div>
                 <div class="text">
                     <h2>SOFTSIM以及远程配置管理</h2>
@@ -179,8 +179,4 @@
         </ng-template>
 
     </div>
-
-
-
-
 </div>
