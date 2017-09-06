@@ -12,15 +12,17 @@
         <ng-template [ngSwitchCase]="1">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="['assets/img/product1.jpg']" [width]="553" [height]="407" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product1.jpg']" [width]="1920" [height]="900" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                 </div>
-                <div class="text">
-                    <h2>领科的模块产品</h2>
-                    <ol>
-                        <li>领科的模块产品，集成了softsim技术，为您和您的公司在物联网中，提供连接管理能力以及服务。</li>
-                        <li>作为世界上领先的模块供应商和softsim技术提供商，我们提供广泛连接无线技术，并支持开源计划，</li>
-                        <li>让您的业务更快地推向市场。</li>
-                    </ol>
+                <div class="flex-items-center">
+                    <div class="first-text">
+                        <h2>领科的模块产品</h2>
+                        <ol>
+                            <li>领科的模块产品，集成了softsim技术，为您和您的公司在物联网中，提供连接管理能力以及服务。</li>
+                            <li>作为世界上领先的模块供应商和softsim技术提供商，我们提供广泛连接无线技术，并支持开源计划，</li>
+                            <li>让您的业务更快地推向市场。</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
 
@@ -30,7 +32,7 @@
                 </div>
                 <div class="introduce">
                     <div class="img-small">
-                        <app-slide-img [list]="['assets/img/product2.jpg']" [width]="370" [height]="210" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                        <app-slide-img [list]="['assets/img/product2.jpg']" [width]="1920" [height]="900" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                     </div>
                     <div class="text">
                         <h2>产品特点以及利益</h2>
@@ -42,66 +44,23 @@
                         </ol>
                     </div>
                 </div>
-                <div class="introduce">
-                    <div class="w-100 p-4">
-                        <h2>技术参数</h2>
-                        <table class="table table-striped" width="100%">
-                            <tbody>
-                            <tr>
-                                <td>2/3/4G</td>
-                                <td>2/3/4G</td>
-                            </tr>
-                            <tr>
-                                <td>速度</td>
-                                <td>上行：100M     下行：100G</td>
-                            </tr>
-                            <tr>
-                                <td>功耗</td>
-                                <td>15W</td>
-                            </tr>
-                            <tr>
-                                <td>GNSS</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>电压</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>尺寸</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>支持接口</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>功能特性</td>
-                                <td>MMS,TTS,</td>
-                            </tr>
-                            <tr>
-                                <td>认证</td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
             </div>
         </ng-template>
 
         <ng-template [ngSwitchCase]="2">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="['assets/img/product3.jpg']" #slideImg="slideImg" [width]="553" [height]="407" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product3.jpg']" #slideImg="slideImg" [width]="1920" [height]="900" [ctrl]="false"></app-slide-img>
                 </div>
-                <div class="text">
-                    <h2>DCP解决方案</h2>
-                    <p>
-                        领科结合全球主要的运营商提供全球范围内最广泛的无线信息覆盖范围，确保客户的临时，长期或备份的关键任务应用程序的管理连接。
-                        基于开放、共赢的理念，面向公共服务自主研发的DCP平台，为各种跨平台物联网应用、行业解决方案提供简便的云端接入、海量存储、计算和大数据可视化服务，从而降低物联网企业和个人（创客）的研发、运营和运维 成本，使物联网企业和个人（创客）更加专注于业务本身，共建物联网生态环境。
-                        我们与全球主要运营商的紧密合作，为设备厂商和服务商的提供的超过99%连接率以上的稳定连接服务，并提供跨窄带和宽带频谱端到端的管理业务能力。
-                    </p>
+                <div class="flex-items-center">
+                    <div class="first-text">
+                        <h2>DCP解决方案</h2>
+                        <p>
+                            领科结合全球主要的运营商提供全球范围内最广泛的无线信息覆盖范围，确保客户的临时，长期或备份的关键任务应用程序的管理连接。
+                            基于开放、共赢的理念，面向公共服务自主研发的DCP平台，为各种跨平台物联网应用、行业解决方案提供简便的云端接入、海量存储、计算和大数据可视化服务，从而降低物联网企业和个人（创客）的研发、运营和运维 成本，使物联网企业和个人（创客）更加专注于业务本身，共建物联网生态环境。
+                            我们与全球主要运营商的紧密合作，为设备厂商和服务商的提供的超过99%连接率以上的稳定连接服务，并提供跨窄带和宽带频谱端到端的管理业务能力。
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="introduce-box">
@@ -151,13 +110,15 @@
         <ng-template [ngSwitchCase]="3">
             <div class="introduce">
                 <div class="img">
-                    <app-slide-img [list]="['assets/img/product4.jpg']" [width]="553" [height]="407" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
+                    <app-slide-img [list]="['assets/img/product4.jpg']" [width]="1920" [height]="900" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                 </div>
-                <div class="text">
-                    <h2>SOFTSIM以及远程配置管理</h2>
-                    <p>
-                        领科提供服务RPS标准规范的SOFTSIM技术结合领科自己的DCP平台，实现远程配置管理，简化您的业务操作，强化合作伙伴的物联网生态系统的建设。
-                    </p>
+                <div class="flex-items-center">
+                    <div class="first-text">
+                        <h2>SOFTSIM以及远程配置管理</h2>
+                        <p>
+                            领科提供服务RPS标准规范的SOFTSIM技术结合领科自己的DCP平台，实现远程配置管理，简化您的业务操作，强化合作伙伴的物联网生态系统的建设。
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="introduce-box">

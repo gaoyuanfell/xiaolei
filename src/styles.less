@@ -188,8 +188,12 @@ a,a:hover {
     margin-bottom: 20px;
     .header{
         padding: 20px;
-        background-color: #f5f5f5;
         width: 100%;
+        background: url(assets/img/bj-info.png) no-repeat;
+        background-size: 100% 100%;
+        > h2{
+            color: #fff;
+        }
     }
     .introduce{
         border:none;
@@ -209,11 +213,21 @@ a,a:hover {
     .img{
         //flex:1;
         margin: 20px;
-        min-width: 500px;
+        min-width: 580px;
     }
     .text{
         margin: 20px;
-        //flex: 0 0 auto;
         height: 100%;
     }
+    .first-text{
+        margin: 20px;
+        background: #F5F5F5;
+        padding: 10px;
+        color: rgb(18,30,90);
+    }
+}
+
+.flex-items-center{
+    display: flex;
+    align-items: center
 }

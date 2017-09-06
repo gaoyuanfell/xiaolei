@@ -14,7 +14,11 @@
     width: 100%;
     height: 100%;
     //padding: 0 32px;
-    background-color: #222;
+    //background-color: #222;
+    background-color:#fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+
     .container-box-header{
         display: flex;
         width: 1220px;
@@ -28,16 +32,15 @@
         width: 205px;
         height: 60px;
         margin: 5px;
-        background-image: url(../../assets/img/logo.png) ;
+        background: url(../../assets/img/logo.png) no-repeat;
         background-size: contain;
-        background-repeat: no-repeat;
     }
     .btn-item {
         flex: 1;
-        >span {
+        .item-text {
             display: inline-block;
             margin: 0 15px;
-            color: #fff;
+            //color: #fff;
             padding: 0 10px;
             height: @header-height;
             line-height: @header-height;
@@ -49,7 +52,7 @@
         line-height: @header-height;
         .lan-item {
             cursor: pointer;
-            color: #999;
+            //color: #999;
             &.selected {
                 color: #fff;
             }
@@ -58,10 +61,12 @@
     .item-nav{
         position: absolute;
         background: #ffffff;
-        padding: 10px;
+        padding: 0 10px;
+        line-height:1;
         box-shadow: 2px 3px 13px #ccc;
         min-width: 100px;
         .item{
+            padding: 15px 0;
             display: block;
             color: #999;
             border-bottom: 1px solid #e6e4e4;
