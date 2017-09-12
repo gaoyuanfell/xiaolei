@@ -19,5 +19,6 @@ export class IndexComponent implements OnInit {
     list = [
         "assets/img/1.jpg",
         "assets/img/2.jpg",
+        "assets/img/3.png",
     ]
 }
