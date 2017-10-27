@@ -28,8 +28,7 @@ export class HeaderComponent implements OnInit {
         this.translate.setDefaultLang('en');
         this.translate.use('en');
         this.isZh = false;
-
-        this.menu[0].name = 'Home'
+        // this.menu[0].name = 'Home'
     }
 
     menu: any = [

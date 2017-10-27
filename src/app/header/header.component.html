@@ -5,18 +5,18 @@
         </h1>
         <div class="btn-item">
             <span class="item-text" *ngFor="let m of menu" (mouseover)="m.show = true" (mouseleave)="m.show = false">
-                <span *ngIf="m.link" [routerLink]="[m.link]">{{m.name}}</span>
+                <span *ngIf="m.link" [routerLink]="[m.link]">{{m.name | translate}}</span>
                 <span *ngIf="!m.link">{{m.name}}</span>
                 <div [@fadeIn] class="item-nav" *ngIf="m.show && m.childList && m.childList.length > 0">
                     <div *ngFor="let c of m.childList" class="item">
-                        <span *ngIf="c.link" [routerLink]="[c.link,c.params]">{{c.name}}</span>
+                        <span *ngIf="c.link" [routerLink]="[c.link,c.params]">{{c.name | translate}}</span>
                         <span *ngIf="!c.link">{{c.name}}</span>
                     </div>
                 </div>
             </span>
         </div>
-        <!--<div class="language">
+        <div class="language">
             <i class="lan-item" [ngClass]="{'selected':isZh}" (click)="changeZh()">中文</i>&nbsp;/&nbsp;<i [ngClass]="{'selected':!isZh}" class="lan-item" (click)="changeEn()">EN</i>
-        </div>-->
+        </div>
     </div>
 </div>

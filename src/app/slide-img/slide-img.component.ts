@@ -22,6 +22,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
                 })
             });
             this.listImg[0].selected = true;
+            this.cacheImg(this.listImg);
         }
 
         this.getImgWH(this.listImg[0].url).then( ({width,height}) => {
@@ -141,5 +142,12 @@ export class SlideImgComponent implements OnInit, OnChanges {
         }
         this.index = index + 1;
         return this.index
+    }
+
+    cacheImg(array){
+        this.listImg.forEach((data)=>{
+            let img = new Image();
+            img.src = data.url;
+        })
     }
 }
