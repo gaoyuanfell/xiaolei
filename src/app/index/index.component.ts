@@ -14,11 +14,11 @@ export class IndexComponent implements OnInit {
     ngOnInit() {
     }
 
-    @ViewChild('slideImg') slideImgRef:SlideImgComponent;
+    @ViewChild('slideImg') slideImgRef: SlideImgComponent;
 
     list = [
         "assets/img/1.jpg",
         "assets/img/2.jpg",
-        "assets/img/3.png",
+        "assets/img/3.jpg",
     ]
 }

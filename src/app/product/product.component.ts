@@ -8,11 +8,11 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductComponent implements OnInit {
 
-    constructor(private _route:ActivatedRoute) {
-        this._route.params.subscribe( (data:any) => {
+    constructor(private _route: ActivatedRoute) {
+        this._route.params.subscribe((data: any) => {
             this.dataType = data.id || 1;
             console.info(data);
-        } )
+        })
     }
 
     dataType = 1;

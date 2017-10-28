@@ -8,21 +8,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent {
     constructor(private translate: TranslateService) {
-        translate.setDefaultLang('en');
-        translate.use('en');
-    }
-
-    private isEn = true;
-
-    change() {
-        if (this.isEn) {
-            this.translate.setDefaultLang('zh');
-            this.translate.use('zh');
-            this.isEn = false;
-        } else {
-            this.translate.setDefaultLang('en');
-            this.translate.use('en');
-            this.isEn = true;
-        }
+        translate.setDefaultLang('zh');
+        translate.use('zh');
     }
 }

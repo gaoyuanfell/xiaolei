@@ -1,9 +1,9 @@
 <div class="container-box">
     <div class="nav-sub">
         <ul class="nav-list">
-            <li><a href="javascript:void 0" (click)="dataType = 1" [ngClass]="{'active':dataType == 1}">领科的模块产品</a></li>
-            <li><a href="javascript:void 0" (click)="dataType = 2" [ngClass]="{'active':dataType == 2}">DCP解决方案</a></li>
-            <li><a href="javascript:void 0" (click)="dataType = 3" [ngClass]="{'active':dataType == 3}">SOFTSIM以及远程配置管理</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 1" [ngClass]="{'active':dataType == 1}">{{'领科的模块产品' | translate}}</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 2" [ngClass]="{'active':dataType == 2}">{{'DCP解决方案' | translate}}</a></li>
+            <li><a href="javascript:void 0" (click)="dataType = 3" [ngClass]="{'active':dataType == 3}">{{'SOFTSIM以及远程配置管理' | translate}}</a></li>
         </ul>
     </div>
 
@@ -16,31 +16,27 @@
                 </div>
                 <div class="flex-items-center">
                     <div class="first-text">
-                        <h2>领科的模块产品</h2>
-                        <ol>
-                            <li>领科的模块产品，集成了softsim技术，为您和您的公司在物联网中，提供连接管理能力以及服务。</li>
-                            <li>作为世界上领先的模块供应商和softsim技术提供商，我们提供广泛连接无线技术，并支持开源计划，</li>
-                            <li>让您的业务更快地推向市场。</li>
-                        </ol>
+                        <h2>{{'领科的模块产品' | translate}}</h2>
+                        <p>{{'领科的模块产品-1' | translate}}</p>
                     </div>
                 </div>
             </div>
 
             <div class="introduce-box">
                 <div class="header">
-                    <h2 class="m-0">产品概述</h2>
+                    <h2 class="m-0">{{'产品概述' | translate}}</h2>
                 </div>
                 <div class="introduce">
-                    <div class="img-small">
+                    <div class="img-small" style="min-width: 300px">
                         <app-slide-img [list]="['assets/img/product2.jpg']" [width]="1920" [height]="900" #slideImg="slideImg" [ctrl]="false"></app-slide-img>
                     </div>
                     <div class="text">
-                        <h2>产品特点以及利益</h2>
+                        <h2>{{'产品特点以及利益' | translate}}</h2>
                         <ol>
-                            <li>具有专用Flash和RAM的高通核心应用处理器运行可增强安全性，降低系统复杂性，降低整体BOM（物料单）管理维度；</li>
-                            <li>可提供GNSS接收器支持跟踪和基于位置的服务</li>
-                            <li>超低功耗模式可将电池或太阳能应用的功耗降低200倍</li>
-                            <li>不同封装形式和开放式测试调试软件，使您的产品更快地推向市场。</li>
+                            <li>{{'产品特点以及利益-1' | translate}}</li>
+                            <li>{{'产品特点以及利益-2' | translate}}</li>
+                            <li>{{'产品特点以及利益-3' | translate}}</li>
+                            <li>{{'产品特点以及利益-4' | translate}}</li>
                         </ol>
                     </div>
                 </div>
@@ -54,53 +50,43 @@
                 </div>
                 <div class="flex-items-center">
                     <div class="first-text">
-                        <h2>DCP解决方案</h2>
+                        <h2>{{'DCP解决方案' | translate}}</h2>
                         <p>
-                            领科结合全球主要的运营商提供全球范围内最广泛的无线信息覆盖范围，确保客户的临时，长期或备份的关键任务应用程序的管理连接。
-                            基于开放、共赢的理念，面向公共服务自主研发的DCP平台，为各种跨平台物联网应用、行业解决方案提供简便的云端接入、海量存储、计算和大数据可视化服务，从而降低物联网企业和个人（创客）的研发、运营和运维 成本，使物联网企业和个人（创客）更加专注于业务本身，共建物联网生态环境。
-                            我们与全球主要运营商的紧密合作，为设备厂商和服务商的提供的超过99%连接率以上的稳定连接服务，并提供跨窄带和宽带频谱端到端的管理业务能力。
+                            {{'DCP解决方案-1' | translate}}
                         </p>
                     </div>
                 </div>
             </div>
             <div class="introduce-box">
                 <div class="header">
-                    <h2 class="m-0">产品概述</h2>
+                    <h2 class="m-0">{{'产品概述' | translate}}</h2>
                 </div>
                 <div class="introduce">
                     <div class="text">
-                        <h2>DCP方案概述</h2>
-                        <p>
-                            1. 我们的设备链接管理系统，通过全球领先的移动网络运营商合作，确保每台设备，在每个位置都有最佳质量连接，确保几乎100％的覆盖。
-                        </p>
-                        <p>2. 我们评估每个连接点的信息，以不断优化我们的质量。</p>
-                        <p>3. 我们的DCP平台提供不间断的无线网络监控能力，如果发生任何更改，将以最快的方式通知您。</p>
+                        <h2>{{'DCP方案概述' | translate}}</h2>
+                        <p>1. {{'DCP方案概述-1' | translate}}</p>
+                        <p>2. {{'DCP方案概述-2' | translate}}</p>
+                        <p>3. {{'DCP方案概述-3' | translate}}</p>
                     </div>
                 </div>
                 <div class="introduce">
                     <div class="text">
-                        <h2>实施方法</h2>
-                        <p>
-                            1. 我们通过移动网络络进行数据通信（包含2/3/4G），从而使合作伙伴能够最大范围内的选择合适的，优质的通信方式，降低合作伙伴的成本。
-                        </p>
-                        <p>2. 于此同时，我们工程师将与您一起进行测试，上线，部署实施。</p>
-                        <p>3. 我们有着最先进的网络节点管理方案和网关，能够为您提供安全，高性能的连接服务，当需要变更接入运营商时候，您不需要出现在部署现场。</p>
+                        <h2>{{'实施方法' | translate}}</h2>
+                        <p>1. {{'实施方法-1' | translate}}</p>
+                        <p>2. {{'实施方法-1' | translate}}</p>
+                        <p>3. {{'实施方法-1' | translate}}</p>
                     </div>
                 </div>
                 <div class="introduce">
                     <div class="text">
-                        <h2>服务质量</h2>
-                        <p>
-                            领科的设备连接管理解决方案提供高达99.9％的正常运行时间和性能服务级别协议（SLA）。您所需要的高质量和可靠性的要求，领科都可以满足并服务于您。
-                        </p>
+                        <h2>{{'服务质量' | translate}}</h2>
+                        <p>{{'服务质量-1' | translate}}</p>
                     </div>
                 </div>
                 <div class="introduce">
                     <div class="text">
-                        <h2>定制解决方案</h2>
-                        <p>
-                            管理连接解决方案可以根据企业的独特业务案例进行定制。。我们通过我们的连接管理方案管理您的全球资费计划，通过我们的网络管理平台，通过预测分析，在所有运营商计划上提供实时网络状态。
-                        </p>
+                        <h2>{{'定制解决方案' | translate}}</h2>
+                        <p>{{'定制解决方案-1' | translate}}</p>
                     </div>
                 </div>
             </div>
@@ -114,28 +100,21 @@
                 </div>
                 <div class="flex-items-center">
                     <div class="first-text">
-                        <h2>SOFTSIM以及远程配置管理</h2>
-                        <p>
-                            领科提供服务RPS标准规范的SOFTSIM技术结合领科自己的DCP平台，实现远程配置管理，简化您的业务操作，强化合作伙伴的物联网生态系统的建设。
-                        </p>
+                        <h2>{{'SOFTSIM以及远程配置管理' | translate}}</h2>
+                        <p>{{'SOFTSIM以及远程配置管理-1' | translate}}</p>
                     </div>
                 </div>
             </div>
             <div class="introduce-box">
                 <div class="header">
-                    <h2 class="m-0">产品概述</h2>
+                    <h2 class="m-0">{{'产品概述' | translate}}</h2>
                 </div>
                 <div class="introduce">
                     <div class="text">
-                        <h2>softsim方案概述</h2>
-                        <p>
-                            Softsim为您提供更有竞争力的价格或更好的可选的覆盖选项。
-                            并能通过远程资源配置管理，为您的IoT用例和数据需求，变更资费计划或运营商。
-                            基于UICC规范的远程配置体系(RPS)的规范规定了无线模块，SIM卡和远程配置订阅之间的传输规范以及业务流程。 这种最新的SIM卡规范有助于解决许多IoT的业务定制的灵活性。
-                        </p>
+                        <h2>{{'softsim方案概述' | translate}}</h2>
+                        <p>{{'softsim方案概述-1' | translate}}</p>
                     </div>
                 </div>
-
             </div>
         </ng-template>
 

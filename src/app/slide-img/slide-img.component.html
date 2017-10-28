@@ -1,6 +1,6 @@
 <div class="carousel-box flex" #carouselBox>
     <div class="slide" *ngFor="let m of listImg">
-        <a [@fadeIn] *ngIf="m.selected" class="click" href="javascript:void 0"> <img [src]="m.url" alt=""> </a>
+        <a [@fadeIn] *ngIf="m.selected" class="click" href="javascript:void 0"> <img [src]="m.url | translate" alt=""></a>
     </div>
     <div class="ctrl left" (click)="pop()" *ngIf="ctrl">
         <span><</span>

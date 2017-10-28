@@ -1,6 +1,5 @@
-import {Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges, ViewChild} from '@angular/core';
 import {fadeIn} from "../basic/animations/fade-in";
-import {reject} from "q";
 
 @Component({
     selector: 'app-slide-img',
@@ -25,33 +24,33 @@ export class SlideImgComponent implements OnInit, OnChanges {
             this.cacheImg(this.listImg);
         }
 
-        this.getImgWH(this.listImg[0].url).then( ({width,height}) => {
-            this._renderer.setStyle(this.carouselBox.nativeElement,'padding-bottom',`${(height / width)*100}%`)
-        } )
+        this.getImgWH(this.listImg[0].url).then(({width, height}) => {
+            this._renderer.setStyle(this.carouselBox.nativeElement, 'padding-bottom', `${(height / width) * 100}%`)
+        })
     }
 
-    constructor(private _renderer:Renderer2) {
+    constructor(private _renderer: Renderer2) {
     }
 
     ngOnInit() {
         this.autoPlay();
-        this._renderer.setStyle(this.carouselBox.nativeElement,'padding-bottom',`${(this.height / this.width)*100}%`)
+        this._renderer.setStyle(this.carouselBox.nativeElement, 'padding-bottom', `${(this.height / this.width) * 100}%`)
     }
 
-    getImgWH(url:string){
+    getImgWH(url: string) {
         let img = new Image();
         img.src = url;
-        return new Promise( (resolve,reject) => {
+        return new Promise((resolve, reject) => {
             img.onload = function () {
                 resolve({
-                    width:img.width,
-                    height:img.height
+                    width: img.width,
+                    height: img.height
                 })
             }
             img.onerror = function (error) {
                 reject(error);
             }
-        } )
+        })
     }
 
     push(img: string, index: number = this.list.length) {
@@ -94,7 +93,7 @@ export class SlideImgComponent implements OnInit, OnChanges {
     @Input('ctrl') ctrl = true;
     @Input('width') width = 0;
     @Input('height') height = 0;
-    @ViewChild('carouselBox') carouselBox:ElementRef;
+    @ViewChild('carouselBox') carouselBox: ElementRef;
 
     selected(m) {
         this.autoPlay();
@@ -144,8 +143,8 @@ export class SlideImgComponent implements OnInit, OnChanges {
         return this.index
     }
 
-    cacheImg(array){
-        this.listImg.forEach((data)=>{
+    cacheImg(array) {
+        this.listImg.forEach((data) => {
             let img = new Image();
             img.src = data.url;
         })
